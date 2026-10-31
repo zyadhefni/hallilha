@@ -1,0 +1,59 @@
+{
+ "problems": {
+  "file": {
+   "rows_in_file": 618,
+   "true_rows_after_dedup": 600,
+   "exact_duplicate_rows": 18
+  },
+  "date_formats_in_file": {
+   "YYYY-MM-DD": 247,
+   "DD/MM/YYYY": 234,
+   "Mon DD, YYYY": 137
+  },
+  "revenue_as_text_SAR": 434,
+  "placeholders": {
+   "channel '-'": 13,
+   "units 'N/A'": 12
+  },
+  "blank_unit_price": 12,
+  "negative_units": 5,
+  "extreme_units_x100": 3,
+  "region_distinct_values_in_file": 24,
+  "region_true_values": [
+   "Abha",
+   "Dammam",
+   "Jeddah",
+   "Makkah",
+   "Riyadh"
+  ],
+  "category_values_with_extra_spaces": 30
+ },
+ "truth": {
+  "total_revenue_true": 1339813.96,
+  "revenue_by_month_true": {
+   "2026-01": 277493.36,
+   "2026-02": 219271.04,
+   "2026-03": 246343.36,
+   "2026-04": 213703.62,
+   "2026-05": 195130.85,
+   "2026-06": 187871.73
+  },
+  "revenue_by_region_true": {
+   "Jeddah": 316414.14,
+   "Dammam": 278152.03,
+   "Riyadh": 262104.25,
+   "Makkah": 259338.15,
+   "Abha": 223805.39
+  },
+  "biggest_units_change_region_x_category_Apr_vs_before": {
+   "Abha/Electronics": -0.718,
+   "Dammam/Electronics": -0.167,
+   "Riyadh/Home": -0.074
+  }
+ },
+ "planted_insight": "From April 2026, Electronics sales in Abha dropped sharply (units fell by about 70%).",
+ "insight_tokens": [
+  "Abha",
+  "Electronics"
+ ]
+}

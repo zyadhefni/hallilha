@@ -1,0 +1,10 @@
+pydantic>=2
+fastapi
+uvicorn
+google-genai
+pandas>=2
+numpy>=1.26
+matplotlib>=3.7
+python-dateutil
+pytest
+httpx

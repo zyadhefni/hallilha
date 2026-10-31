@@ -1,0 +1,100 @@
+{
+  "options": {
+    "split": "dev",
+    "no_verify": false,
+    "no_grounding": false,
+    "tag": ""
+  },
+  "rows": [
+    {
+      "domain": "sales",
+      "seed": 1,
+      "fix_rate": 0.9876900796524257,
+      "damage_rate": 0.0,
+      "dup_left": 0,
+      "insight_hit": false,
+      "ungrounded": 0,
+      "human_stops": 0,
+      "calls": 6,
+      "tokens": 6662,
+      "secs": 3.5
+    },
+    {
+      "domain": "sales",
+      "seed": 2,
+      "fix_rate": 0.9894179894179894,
+      "damage_rate": 0.0,
+      "dup_left": 0,
+      "insight_hit": false,
+      "ungrounded": 0,
+      "human_stops": 0,
+      "calls": 6,
+      "tokens": 6677,
+      "secs": 2.9
+    },
+    {
+      "domain": "hr",
+      "seed": 1,
+      "fix_rate": 0.9903632320237212,
+      "damage_rate": 0.0,
+      "dup_left": 0,
+      "insight_hit": true,
+      "ungrounded": 0,
+      "human_stops": 1,
+      "calls": 7,
+      "tokens": 8699,
+      "secs": 3.1
+    },
+    {
+      "domain": "hr",
+      "seed": 2,
+      "fix_rate": 0.9909570459683497,
+      "damage_rate": 0.0,
+      "dup_left": 0,
+      "insight_hit": false,
+      "ungrounded": 0,
+      "human_stops": 0,
+      "calls": 6,
+      "tokens": 7206,
+      "secs": 2.7
+    },
+    {
+      "domain": "support",
+      "seed": 1,
+      "fix_rate": 0.9748251748251748,
+      "damage_rate": 0.0,
+      "dup_left": 0,
+      "insight_hit": true,
+      "ungrounded": 0,
+      "human_stops": 1,
+      "calls": 7,
+      "tokens": 7602,
+      "secs": 3.0
+    },
+    {
+      "domain": "support",
+      "seed": 2,
+      "fix_rate": 0.973293768545994,
+      "damage_rate": 0.0,
+      "dup_left": 0,
+      "insight_hit": true,
+      "ungrounded": 0,
+      "human_stops": 1,
+      "calls": 7,
+      "tokens": 7597,
+      "secs": 2.9
+    }
+  ],
+  "summary": {
+    "n": 6,
+    "errors": 0,
+    "fix_rate": 0.9844,
+    "damage_rate": 0.0,
+    "dup_left": 0.0,
+    "insight_hit": 0.5,
+    "ungrounded": 0.0,
+    "human_stops": 0.5,
+    "calls": 6.5,
+    "tokens": 7407.1667
+  }
+}

@@ -1,0 +1,12 @@
+name: tests
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install -r requirements.txt
+      - run: python -m pytest -q tests                      # unit + API tests, offline (rule-based stand-in model)
+      - run: LLM_BACKEND=fake python eval.py --split dev    # end-to-end smoke test on planted data, no API key needed

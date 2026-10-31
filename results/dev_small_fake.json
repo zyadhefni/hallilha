@@ -1,0 +1,108 @@
+{
+  "options": {
+    "split": "dev",
+    "no_verify": false,
+    "no_grounding": false,
+    "variant": "small",
+    "tag": ""
+  },
+  "rows": [
+    {
+      "domain": "sales",
+      "seed": 1,
+      "fix_rate": 0.9915014164305949,
+      "damage_rate": 0.0,
+      "dup_left": 0,
+      "insight_hit": false,
+      "insight_lead": false,
+      "ungrounded": 0,
+      "human_stops": 0,
+      "calls": 6,
+      "tokens": 8049,
+      "secs": 1.5
+    },
+    {
+      "domain": "sales",
+      "seed": 2,
+      "fix_rate": 0.9808219178082191,
+      "damage_rate": 0.0,
+      "dup_left": 0,
+      "insight_hit": false,
+      "insight_lead": false,
+      "ungrounded": 0,
+      "human_stops": 0,
+      "calls": 6,
+      "tokens": 8239,
+      "secs": 1.4
+    },
+    {
+      "domain": "hr",
+      "seed": 1,
+      "fix_rate": 0.9854651162790697,
+      "damage_rate": 0.0,
+      "dup_left": 0,
+      "insight_hit": true,
+      "insight_lead": false,
+      "ungrounded": 0,
+      "human_stops": 0,
+      "calls": 6,
+      "tokens": 8610,
+      "secs": 1.3
+    },
+    {
+      "domain": "hr",
+      "seed": 2,
+      "fix_rate": 0.9884057971014493,
+      "damage_rate": 0.0,
+      "dup_left": 0,
+      "insight_hit": false,
+      "insight_lead": false,
+      "ungrounded": 0,
+      "human_stops": 0,
+      "calls": 6,
+      "tokens": 8705,
+      "secs": 1.3
+    },
+    {
+      "domain": "support",
+      "seed": 1,
+      "fix_rate": 0.9824561403508771,
+      "damage_rate": 0.0,
+      "dup_left": 0,
+      "insight_hit": false,
+      "insight_lead": false,
+      "ungrounded": 0,
+      "human_stops": 0,
+      "calls": 6,
+      "tokens": 7672,
+      "secs": 1.2
+    },
+    {
+      "domain": "support",
+      "seed": 2,
+      "fix_rate": 0.9866666666666667,
+      "damage_rate": 0.0,
+      "dup_left": 0,
+      "insight_hit": true,
+      "insight_lead": false,
+      "ungrounded": 0,
+      "human_stops": 0,
+      "calls": 6,
+      "tokens": 7633,
+      "secs": 1.4
+    }
+  ],
+  "summary": {
+    "n": 6,
+    "errors": 0,
+    "fix_rate": 0.9859,
+    "damage_rate": 0.0,
+    "dup_left": 0.0,
+    "insight_hit": 0.3333,
+    "insight_lead": 0.0,
+    "ungrounded": 0.0,
+    "human_stops": 0.0,
+    "calls": 6.0,
+    "tokens": 8151.3333
+  }
+}

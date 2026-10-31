@@ -1,0 +1,67 @@
+{
+  "rows": [
+    {
+      "domain": "sales",
+      "seed": 101,
+      "insight_hit": true,
+      "insight_lead": false,
+      "count_exact": true,
+      "count_err": 0,
+      "metric_err": 0.006716814530544486
+    },
+    {
+      "domain": "sales",
+      "seed": 102,
+      "insight_hit": true,
+      "insight_lead": true,
+      "count_exact": true,
+      "count_err": 0,
+      "metric_err": 0.15071119728493038
+    },
+    {
+      "domain": "hr",
+      "seed": 101,
+      "insight_hit": true,
+      "insight_lead": true,
+      "count_exact": false,
+      "count_err": 400,
+      "metric_err": 0.009957929022189069
+    },
+    {
+      "domain": "hr",
+      "seed": 102,
+      "insight_hit": true,
+      "insight_lead": true,
+      "count_exact": false,
+      "count_err": 500,
+      "metric_err": 0.007110064743967041
+    },
+    {
+      "domain": "support",
+      "seed": 101,
+      "insight_hit": true,
+      "insight_lead": true,
+      "count_exact": true,
+      "count_err": 0,
+      "metric_err": 0.006386261097365757
+    },
+    {
+      "domain": "support",
+      "seed": 102,
+      "insight_hit": true,
+      "insight_lead": true,
+      "count_exact": false,
+      "count_err": 573,
+      "metric_err": 0.019272120968205506
+    }
+  ],
+  "summary": {
+    "n": 6,
+    "errors": 0,
+    "insight_hit": 1.0,
+    "insight_lead": 0.8333,
+    "count_exact": 0.5,
+    "count_err": 245.5,
+    "metric_err": 0.0334
+  }
+}
