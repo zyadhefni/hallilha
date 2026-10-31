@@ -59,13 +59,19 @@ python3 eval.py --split test [--variant base|noisy|arabic|small|locale|null|requ
 python3 oneshot_eval.py --split test      # the one-prompt baseline
 python3 -m pytest tests                   # regression tests (offline)
 ```
+## Run on a public file
+Besides the synthetic files, Hallilha was run once on the public Superstore sales sample (10,800 rows, never used in development). There is no planted ground truth here, so this is a qualitative check, not a score.
+- Cleaning removed 504 duplicate and 302 empty rows and recovered the original 9,994 rows exactly. The 11 missing postal codes were left alone.
+- The analysis found the known pattern: discounts above 40% had a 100% loss rate across 933 line items.
+- Two weaknesses showed up. The number check flagged "41" as unverified because it appears inside a category label ("41-80%"), a false alarm. And the first decision attributed East Tables losses to Central Furniture: every number was real, so the check passed it. One human review note corrected the attribution, and the revision still linked all-years sub-category losses to a single-year drop without a table to support it. Number checks verify that numbers exist, not that the reasoning is right, which is why a person reviews each stage.
 
 ## Limits (what is not proven)
-- Synthetic evaluation data with one kind of insight, and a small held-out set of 6 files. Not tested on real enterprise data yet.
+- Mostly synthetic evaluation data with one kind of insight, and a small held-out set of 6 files. One public real file was run as a qualitative check only, with no ground truth.
 - Output varies between runs: the finding led the headline in 78% of repeated runs.
 - Single table per run, CSV input only.
 - Hosted model: the Gemini API receives column profiles and computed tables (not the whole file). For sensitive data the model sits behind
   one interface (`generate(system, messages) -> JSON`) and already runs with two backends (Gemini and rules only). A self-hosted model
   is untested and would need the same held-out evaluation.
 - Numbers are verified against computed tables, but the *interpretation* of a finding is a model judgement, which is why a person reviews it.
+- Number grounding can flag numbers that appear only inside category labels (for example a "41-80%" band), and it cannot catch wrong reasoning built from correct numbers.
 
